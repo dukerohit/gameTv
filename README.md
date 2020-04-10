@@ -17,5 +17,6 @@ Automation of prepare list game details showing on www.game.tv
 mvn clean test -DtestngFile=testng.xml
 
 #Access generated game list report
+
 cd gameTv
 You can see HTML file with name gameList_(date of run automation).html
