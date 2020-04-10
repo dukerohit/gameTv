@@ -19,4 +19,5 @@ mvn clean test -DtestngFile=testng.xml
 #Access generated game list report
 
 cd gameTv
+
 You can see HTML file with name gameList_(date of run automation).html
