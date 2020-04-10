@@ -79,7 +79,7 @@ public class getGameDetailsAndTournamentCount {
             reportIn = reportIn.replaceFirst(resultPlaceholder, "<tr><td align='center'>" + (i + 1) + "</td><td align='center'>" + gameName.get(i) + "</td><td align='center'>" + gameUrl.get(i) + "</td><td align='center'>" + pageStatusCode.get(i) + "</td><td align='center'>" + tournamentCount.get(i) + "</td></tr>\n" + resultPlaceholder);
         }
         String currentDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
-        String reportPath = System.getProperty("user.dir") + "gameList_" + currentDate + ".html";
+        String reportPath = System.getProperty("user.dir") + "/gameList_" + currentDate + ".html";
         Files.write(Paths.get(reportPath), reportIn.getBytes(), StandardOpenOption.CREATE);
     }
 
